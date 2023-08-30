@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "enigma-new"
+version = "0.1.0"
+description = ""
+authors = ["Markushik <zem_mark@yahoo.com>"]
+readme = "README.md"
+packages = [{include = "enigma_new"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dynaconf = "^3.2.2"
+structlog = "^23.1.0"
+aiogram-dialog = "^2.0.0rc2"
+redis = "^5.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.286"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
